@@ -1,0 +1,153 @@
+.sec1 {
+    width:36%;
+    height: 100%;
+ 
+}
+.sec-ctn{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    height: 120vh;
+}
+.sec2{
+        width:64%;
+        height: 100%;
+}
+.hm-img-layer {
+    background-color: #f8f1c904;
+}
+.hm-layer {
+    width:60%;
+    top:0px;
+    bottom:0;
+    margin:auto;
+    left: -200px;
+    height: 140vh;
+    position: absolute;
+    transform: rotate(-6deg);
+    z-index: 2;
+    background-color: #DDC1A9;
+}
+.hm-img {
+    object-position: 50% 19%;
+}
+
+.hm-logo-txt{
+    position: absolute;
+    top:33px;
+    left:30px;
+    width:fit-content;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+}
+.hm-logotxt-name {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.hm-logotxt-line {
+    height: 2px;
+    width:60%;
+}
+.hm-title-ly {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top:180px;
+    bottom:0;
+    left:140px;
+    width: fit-content;
+    height: fit-content;
+    margin:auto;
+    z-index: 3;
+    gap:50px;
+}
+.big-txt {
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 0;
+}
+.sm-txt {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 0;
+
+}
+.hm-btn-ctn {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 70px;
+}
+
+.wk-ctn {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:990px) {
+    .hm-layer {
+        left: -100px;
+        width:550px
+    }
+}
+@media (max-width: 768px) {
+.sec1 {
+    width:100%;
+    display: none;
+ 
+}
+.sec-ctn{
+    display: block;
+    position: relative;
+    height: 100vh;
+}
+.sec2{
+        width:100%;
+        height: 100vh;
+}
+
+.hm-layer {
+    width:100%;
+    top:0px;
+    bottom:0;
+    margin:auto;
+    left: -170px;
+    height: 120vh;
+    transform: rotate(0deg);
+    display: none;
+}
+.hm-img-layer {
+    background-color: #f8f1c99e;
+    height:120vh;
+}
+.hm-title-ly {
+    text-align: center;
+    left:0;
+    right:0;
+    gap:60px;
+}
+.hm-btn-ctn {
+margin: 0 auto;
+    margin-top: 67px;
+}
+
+}
+
+@media (max-width: 480px) {
+    .hm-img {
+        width: 110%;
+        height: 110%;
+    }
+    .hm-title-ly {
+        gap:50px;
+    }
+    .big-txt {
+        font-size: 62px;
+    }
+    .sm-txt {
+        font-size: 32px;
+    }
+
+}
